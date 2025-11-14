@@ -3,6 +3,8 @@ package org.example;
 import org.example.models.ModelRunner;
 import org.example.tools.*;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         var runner = new ModelRunner();
@@ -13,8 +15,9 @@ public class Main {
             account. If not, return the value to the account and don't charge the tax.
         """;
 
+        List<Object> tools = List.of(new BankToolsA(), new BankToolsB());
         // CONF1: only BankToolsA
-        runner.run("deepseek-r1:latest", prompt1, new BankToolsA());
+        runner.run("deepseek-r1:1.5b", prompt1, tools);
 
         // CONF2: only BankToolsB
         // runner.run("deepseek-r1:latest", prompt1, new BankToolsB());

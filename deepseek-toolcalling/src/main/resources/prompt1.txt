@@ -1,0 +1,3 @@
+Transfer 1000 from account BC12345 to the account ND87632 by withdrawing from the first and depositing into the second.
+If both operations are successful, charge 1.50 from the first account.
+If not, return the value to the account and don't charge the tax.

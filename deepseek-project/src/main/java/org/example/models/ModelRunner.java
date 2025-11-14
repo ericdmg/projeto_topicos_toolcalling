@@ -1,5 +1,6 @@
 package org.example.models;
 
+import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.model.ollama.OllamaChatModel;
 import org.example.logging.ToolLogger;
 import org.example.tools.*;
@@ -10,7 +11,7 @@ public class ModelRunner {
 
     public void run(String modelName, String prompt, Object... tools) {
         // Create the Ollama model
-        var model = OllamaChatModel.builder()
+        ChatModel model = OllamaChatModel.builder()
                 .baseUrl("http://localhost:11434")
                 .modelName(modelName)
                 .build();
@@ -25,7 +26,7 @@ public class ModelRunner {
         String finalPrompt = systemPrompt + prompt;
 
         // Call the model
-        var response = model.generate(finalPrompt);
+        var response = model.chat(finalPrompt);
         System.out.println("Model response:\n" + response);
 
         // Simulate that we would have logged a tool invocation

@@ -1,0 +1,11 @@
+langchain4j:
+  ollama:
+    chat-model:
+      base-url: http://localhost:11434
+      model-name: llama3.2:latest
+      temperature: 0.0
+
+
+spring:
+  profiles:
+    active: conf-a

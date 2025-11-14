@@ -1,0 +1,3 @@
+Execute withdrawal operations of 500 from account BC3456A one at a time.
+Repeat until a failure is received, or until this operation has been executed 5 times.
+Deposit the total value withdrawn in account FG62495S and pay a tax of 10% of the value deposited in the account FG62495S.

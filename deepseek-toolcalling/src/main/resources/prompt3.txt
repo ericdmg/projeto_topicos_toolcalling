@@ -1,0 +1,3 @@
+Withdraw 600 from account AG7340H and 700 from account TG23986Q.
+If one of the operations is not successful, return the value to the other account and don't execute anything else.
+If both operations are successful, perform a deposit of the summed value into account WS2754T and perform a payment of 1200 in this same account.

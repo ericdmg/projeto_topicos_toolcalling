@@ -19,14 +19,13 @@
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j</artifactId>
-            <version>0.31.0</version>
+            <version>1.8.0</version>
         </dependency>
 
-        <!-- ✅ LangChain4J Ollama Model Connector -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-ollama</artifactId>
-            <version>0.31.0</version>
+            <version>1.8.0</version>
         </dependency>
 
         <!-- ✅ Logging -->
