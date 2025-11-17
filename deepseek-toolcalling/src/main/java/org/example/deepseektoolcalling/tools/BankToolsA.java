@@ -27,7 +27,6 @@ public class BankToolsA {
     public boolean deposit(@P("account number") String accountNumber,
                            @P("value to be deposited") double value) {
         logger.record("BankToolsA.deposit", accountNumber, value);
-        boolean s = logger.getScenarioResult("deposit", accountNumber, value);
         return logger.getScenarioResult("deposit", accountNumber, value);
     }
 

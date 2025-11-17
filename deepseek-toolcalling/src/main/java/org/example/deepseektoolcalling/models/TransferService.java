@@ -17,11 +17,5 @@ public interface TransferService {
         CRITICAL RULE: After executing the final tool call, you MUST provide a concise, textual summary of the operation's outcome to the user.
         """)
 
-    // O prompt que antes estava no seu Main.java, agora está aqui:
-    @UserMessage("""
-        Transfer 1000 from account BC12345 to the account ND87632 by withdrawing from the first
-        and depositing into the second. If both operations forem successful, charge 1.50 from the first
-        account. If not, return the value to the account and don't charge the tax.
-        """)
     String executePrompt(String userPrompt);
 }
