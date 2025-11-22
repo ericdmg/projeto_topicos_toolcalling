@@ -8,4 +8,4 @@ langchain4j:
 
 spring:
   profiles:
-    active: conf-a
+    active: conf-b

@@ -11,17 +11,14 @@ public class ScenarioSimulator {
     private int withdrawCounter = 0;
     private int failAfterCount = -1;
 
-    /**
-     * Reseta todo o estado do simulador (mapa e contadores).
-     */
+
     private void resetState() {
         this.scenarioResults.clear();
         this.withdrawCounter = 0;
         this.failAfterCount = -1;
     }
 
-    // --- MÉTODOS DE CONFIGURAÇÃO GENÉRICOS ---
-    // A Main agora chama apenas estes métodos, passando a 'confName'.
+
 
     public void configureP1A(String confName) {
         this.resetState();

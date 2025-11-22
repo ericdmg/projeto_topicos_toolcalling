@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component // <-- Permite que o Spring injete esta classe
+@Component
 public class ToolLogger {
 
     private static ToolLogger instance;

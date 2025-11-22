@@ -11,10 +11,6 @@ import org.springframework.util.StreamUtils;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-/**
- * Configuração manual do modelo Ollama para uso com LangChain4j.
- * Necessária porque a autoconfiguração YAML ainda não cobre o provedor Ollama.
- */
 @Configuration
 public class ModelConfig {
 

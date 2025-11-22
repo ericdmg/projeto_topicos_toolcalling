@@ -12,9 +12,6 @@ import java.util.List;
 @Configuration
 public class AgentConfig {
 
-    /**
-     * Método helper para criar a instância de TransferService com as ferramentas fornecidas.
-     */
     private TransferService createAgent(ChatLanguageModel model, List<Object> tools) {
         return AiServices.builder(TransferService.class)
                 .chatLanguageModel(model)
