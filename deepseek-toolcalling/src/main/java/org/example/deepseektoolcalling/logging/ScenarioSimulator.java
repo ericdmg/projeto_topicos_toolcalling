@@ -115,10 +115,6 @@ public class ScenarioSimulator {
         }
     }
 
-    /**
-     * Avalia qual resultado booleano retornar.
-     * Esta lógica é genérica e funciona para todos os cenários.
-     */
     public boolean evaluate(String operation, String account, double value) {
         String key = String.format("%s:%s:%.1f", operation, account, value);
 

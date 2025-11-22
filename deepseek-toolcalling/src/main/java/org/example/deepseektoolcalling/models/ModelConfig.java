@@ -32,13 +32,10 @@ public class ModelConfig {
                 .build();
     }
 
-    // Helper para ler o conteúdo do Resource (Arquivo)
     private String readResource(Resource resource) {
         try {
-            // Se o arquivo não existir, esta linha lança o FileNotFoundException
             return StreamUtils.copyToString(resource.getInputStream(), StandardCharsets.UTF_8);
         } catch (IOException e) {
-            // Esta é a exceção que você está capturando e relançando, revelando a falha
             throw new RuntimeException("Failed to read prompt file: " + resource.getFilename(), e);
         }
     }

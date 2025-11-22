@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 
 @AiService
 public interface TransferService {
-    // Define a persona e força o uso das ferramentas
     @SystemMessage("""
         You are an expert bank agent. Your sole purpose is to analyze the user's request and execute the necessary transfer, tax, and refund logic using the available tools.
         You MUST achieve the final goal by calling the tools in the correct sequence.
